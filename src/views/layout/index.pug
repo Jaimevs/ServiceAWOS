@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(rel="shortcut icon", href="img/Grupo 1.jpg", type="image/x-icon")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title JafaService | #{page}
+        link(rel="stylesheet", href="/css/app.css")
+        script(src="/js/setTime.js")
+        script(src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js")
+    body.bg-gray-100.font-mono
+        main(class="mx-auto container mrt-10 px2")
+            block content
+        block scripts

@@ -1,0 +1,119 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title JafaService💻|#{page}
+        
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+        link(rel="shortcut icon", href="img/Grupo 1.jpg", type="image/x-icon")
+        link(href="https://fonts.googleapis.com/css2?family=Inter&display=swap", rel="stylesheet")
+        link(rel="stylesheet", href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css")
+        link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css")
+    body 
+        header
+            nav.container-nav
+                a(href="")
+                    img(src="img/Grupo 1.gif", alt="" class="logo-header")
+                h1.main-title Reparación y Mantenimiento de Equipos de Cómputo
+                
+
+        section.main-section
+            .hero-container
+                h1.h1-hero Soporte Técnico TI
+                .p-hero-container
+                    p.p-hero Tu productividad no puede detenerse. Ofrecemos soporte técnico especializado para tus equipos de cómputo personales.
+
+                    form(action="" class="form-hero")
+                        a(href="./login")
+                            input(type="button" value="Iniciar Sesion")                           
+        section.carrusel 
+            div 
+                img(src="img/HP-logo.png", alt="" class="img-carrusel")
+            div 
+                img(src="img/DELL-logo.png", alt="" class="img-carrusel")
+            div 
+                img(src="img/Lenovo-logo.png", alt="" class="img-carrusel")
+            div 
+                img(src="img/Microsoft-logo.png", alt="" class="img-carrusel")    
+        section.container-services
+            .title-services 
+                .h1-title 
+                    h1 Arma tu
+                    h1(style="color:#05A6A6") servicio
+                p Adaptable a las necesidades de tu negocio
+            .container-cards-services
+                .card
+                    img(src="img/renewable.png", alt="", class="img-card")
+                    h3 Renovacion Tecnogica 
+                    p Proyectos de actualizacion de hardware y/o software
+                .card
+                    img(src="img/inventory (1).png", alt="", class="img-card")
+                    h3 Actualización de software
+                    p Sistemas operativos y actualizaciones que puedan mejorar el rendimiento.
+                .card
+                    img(src="img/data-management.png", alt="", class="img-card")
+                    h3 Recuperación de datos
+                    p Recuperar los datos perdidos o dañados, utilizando técnicas de recuperación.
+                .card
+                    img(src="img/safety.png", alt="", class="img-card")
+                    h3 Preventivo 
+                    p Reduce costos, aumenta la productividad y la vida util de hardware
+                .card
+                    img(src="img/multifunction-printer.png", alt="", class="img-card")
+                    h3 Perifericos 
+                    p Soporte a impresoras, escaners y demas equipos de tecnologias de la informacion
+                .card
+                    img(src="img/proofreading.png", alt="", class="img-card")
+                    h3 Correctivo 
+                    p Soluciona en tiempo y forma incidentes que impactan la productividad
+                .card
+                    img(src="img/assurance.png", alt="", class="img-card")
+                    h3 Eliminación de virus y malware 
+                    p Servicios para eliminar programas maliciosos que puedan afectar el rendimiento de los equipos
+                .card
+                    img(src="img/purchase.png", alt="", class="img-card")
+                    h3 Con o sin refacciones 
+                    p Proveemos refacciones para el soporte.
+            .flex-container
+                article.info-text   
+                    .h1-info 
+                        h1 Cobertura de toda la sierra
+                        h1(style="color: #05A6A6") Norte Poblama 
+                    p Nuestra cobertura es todo Xicotepec y sus alrededores 
+                aside.info-img 
+                    img(src="img/mapaxico.png", alt="", class="info-img")
+            
+        
+        
+        footer
+            .footer-container
+                .map-container
+                   #map(style="width:100%; height:100%; background-color:#05A6A6;")
+                .form-container 
+                    h2.h2-footer Contactanos
+                    form(action="./" method="POST" name="form-footer" class="form-footer" target="_parent")
+                        label(for="name") Nombre
+                        input(type="text" name="name" id="name")
+                        br
+                        label(for="mail") Email
+                        input(type="Email" name="mail" id="mail")
+                        br
+                        label(for="subject") Asunto
+                        input(type="tel" name="subject" id="phone")
+                        br
+                        label(for="msg") Mensaje
+                        textarea(name="msg", cols="30", rows="4")
+                        br
+                        input(type="submit" name="form-footer" value="Enviar Mensaje")
+                        br
+    
+    
+        script(src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js")
+        script(src="https://unpkg.com/esri-leaflet@3.0.8/dist/esri-leaflet.js")
+        script(src="https://unpkg.com/esri-leaflet-geocoder@2.2.13/dist/esri-leaflet-geocoder.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-geosearch/2.7.0/bundle.min.js")
+        script(src="./js/map.js") 
+        
